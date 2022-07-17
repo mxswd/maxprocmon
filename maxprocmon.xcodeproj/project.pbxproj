@@ -11,7 +11,29 @@
 		CF7F3AE82883DC9500BFC161 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F3AE72883DC9500BFC161 /* ViewController.swift */; };
 		CF7F3AEA2883DC9600BFC161 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF7F3AE92883DC9600BFC161 /* Assets.xcassets */; };
 		CF7F3AED2883DC9600BFC161 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7F3AEB2883DC9600BFC161 /* Main.storyboard */; };
+		CF7F3B0D2883DF1600BFC161 /* XPCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F3B0C2883DF1600BFC161 /* XPCClient.swift */; };
+		CF7F3B162883E6F200BFC161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7F3B152883E6F200BFC161 /* main.m */; };
+		CF7F3B1A2883E71100BFC161 /* maxprocmon_xpc.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7F3AFC2883DE1D00BFC161 /* maxprocmon_xpc.m */; };
+		CF7F3B1C2883E74F00BFC161 /* town.max.maxprocmond in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF7F3B132883E6F200BFC161 /* town.max.maxprocmond */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CF7F3B222883EF6A00BFC161 /* EndpointSecurity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF7F3B202883EF6A00BFC161 /* EndpointSecurity.cpp */; };
+		CF7F3B272883EF9800BFC161 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = CF7F3B242883EF9800BFC161 /* sqlite3.c */; };
+		CF7F3B292883F03700BFC161 /* esmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF7F3B282883F03700BFC161 /* esmain.cpp */; };
+		CF7F3B2E2883F1B000BFC161 /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7F3B2D2883F19B00BFC161 /* libEndpointSecurity.tbd */; };
+		CF7F3B2F2883F1B200BFC161 /* libbsm.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7F3B2C2883F19400BFC161 /* libbsm.tbd */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF7F3B1B2883E73A00BFC161 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				CF7F3B1C2883E74F00BFC161 /* town.max.maxprocmond in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CF7F3AE22883DC9500BFC161 /* maxprocmon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maxprocmon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +42,26 @@
 		CF7F3AE92883DC9600BFC161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF7F3AEC2883DC9600BFC161 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF7F3AEE2883DC9600BFC161 /* maxprocmon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = maxprocmon.entitlements; sourceTree = "<group>"; };
+		CF7F3AFA2883DE1D00BFC161 /* maxprocmon_xpcProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maxprocmon_xpcProtocol.h; sourceTree = "<group>"; };
+		CF7F3AFB2883DE1D00BFC161 /* maxprocmon_xpc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maxprocmon_xpc.h; sourceTree = "<group>"; };
+		CF7F3AFC2883DE1D00BFC161 /* maxprocmon_xpc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = maxprocmon_xpc.m; sourceTree = "<group>"; };
+		CF7F3B082883DECD00BFC161 /* maxprocmon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "maxprocmon-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF7F3B0C2883DF1600BFC161 /* XPCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCClient.swift; sourceTree = "<group>"; };
+		CF7F3B0E2883E51D00BFC161 /* launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = launchd.plist; sourceTree = "<group>"; };
+		CF7F3B132883E6F200BFC161 /* town.max.maxprocmond */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = town.max.maxprocmond; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7F3B152883E6F200BFC161 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF7F3B1D2883E81400BFC161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF7F3B1F2883EA9800BFC161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CF7F3B202883EF6A00BFC161 /* EndpointSecurity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EndpointSecurity.cpp; sourceTree = "<group>"; };
+		CF7F3B212883EF6A00BFC161 /* EndpointSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndpointSecurity.h; sourceTree = "<group>"; };
+		CF7F3B232883EF8800BFC161 /* flags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flags.h; sourceTree = "<group>"; };
+		CF7F3B242883EF9800BFC161 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		CF7F3B252883EF9800BFC161 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		CF7F3B262883EF9800BFC161 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		CF7F3B282883F03700BFC161 /* esmain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = esmain.cpp; sourceTree = "<group>"; };
+		CF7F3B2A2883F14600BFC161 /* town.max.maxprocmond.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = town.max.maxprocmond.entitlements; sourceTree = "<group>"; };
+		CF7F3B2C2883F19400BFC161 /* libbsm.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbsm.tbd; path = usr/lib/libbsm.tbd; sourceTree = SDKROOT; };
+		CF7F3B2D2883F19B00BFC161 /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +72,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF7F3B102883E6F200BFC161 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7F3B2E2883F1B000BFC161 /* libEndpointSecurity.tbd in Frameworks */,
+				CF7F3B2F2883F1B200BFC161 /* libbsm.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,7 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				CF7F3AE42883DC9500BFC161 /* maxprocmon */,
+				CF7F3B142883E6F200BFC161 /* maxprocmond */,
 				CF7F3AE32883DC9500BFC161 /* Products */,
+				CF7F3B2B2883F19400BFC161 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CF7F3AE22883DC9500BFC161 /* maxprocmon.app */,
+				CF7F3B132883E6F200BFC161 /* town.max.maxprocmond */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,13 +106,46 @@
 		CF7F3AE42883DC9500BFC161 /* maxprocmon */ = {
 			isa = PBXGroup;
 			children = (
+				CF7F3B1F2883EA9800BFC161 /* Info.plist */,
 				CF7F3AE52883DC9500BFC161 /* AppDelegate.swift */,
 				CF7F3AE72883DC9500BFC161 /* ViewController.swift */,
+				CF7F3B0C2883DF1600BFC161 /* XPCClient.swift */,
 				CF7F3AE92883DC9600BFC161 /* Assets.xcassets */,
 				CF7F3AEB2883DC9600BFC161 /* Main.storyboard */,
 				CF7F3AEE2883DC9600BFC161 /* maxprocmon.entitlements */,
+				CF7F3B082883DECD00BFC161 /* maxprocmon-Bridging-Header.h */,
 			);
 			path = maxprocmon;
+			sourceTree = "<group>";
+		};
+		CF7F3B142883E6F200BFC161 /* maxprocmond */ = {
+			isa = PBXGroup;
+			children = (
+				CF7F3B0E2883E51D00BFC161 /* launchd.plist */,
+				CF7F3B1D2883E81400BFC161 /* Info.plist */,
+				CF7F3B2A2883F14600BFC161 /* town.max.maxprocmond.entitlements */,
+				CF7F3AFB2883DE1D00BFC161 /* maxprocmon_xpc.h */,
+				CF7F3AFC2883DE1D00BFC161 /* maxprocmon_xpc.m */,
+				CF7F3AFA2883DE1D00BFC161 /* maxprocmon_xpcProtocol.h */,
+				CF7F3B152883E6F200BFC161 /* main.m */,
+				CF7F3B282883F03700BFC161 /* esmain.cpp */,
+				CF7F3B202883EF6A00BFC161 /* EndpointSecurity.cpp */,
+				CF7F3B212883EF6A00BFC161 /* EndpointSecurity.h */,
+				CF7F3B232883EF8800BFC161 /* flags.h */,
+				CF7F3B242883EF9800BFC161 /* sqlite3.c */,
+				CF7F3B262883EF9800BFC161 /* sqlite3.h */,
+				CF7F3B252883EF9800BFC161 /* sqlite3ext.h */,
+			);
+			path = maxprocmond;
+			sourceTree = "<group>";
+		};
+		CF7F3B2B2883F19400BFC161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF7F3B2D2883F19B00BFC161 /* libEndpointSecurity.tbd */,
+				CF7F3B2C2883F19400BFC161 /* libbsm.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +158,7 @@
 				CF7F3ADE2883DC9500BFC161 /* Sources */,
 				CF7F3ADF2883DC9500BFC161 /* Frameworks */,
 				CF7F3AE02883DC9500BFC161 /* Resources */,
+				CF7F3B1B2883E73A00BFC161 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -80,6 +168,22 @@
 			productName = maxprocmon;
 			productReference = CF7F3AE22883DC9500BFC161 /* maxprocmon.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CF7F3B122883E6F200BFC161 /* town.max.maxprocmond */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7F3B172883E6F200BFC161 /* Build configuration list for PBXNativeTarget "town.max.maxprocmond" */;
+			buildPhases = (
+				CF7F3B0F2883E6F200BFC161 /* Sources */,
+				CF7F3B102883E6F200BFC161 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = town.max.maxprocmond;
+			productName = maxprocmond;
+			productReference = CF7F3B132883E6F200BFC161 /* town.max.maxprocmond */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +196,10 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					CF7F3AE12883DC9500BFC161 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+					CF7F3B122883E6F200BFC161 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -110,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				CF7F3AE12883DC9500BFC161 /* maxprocmon */,
+				CF7F3B122883E6F200BFC161 /* town.max.maxprocmond */,
 			);
 		};
 /* End PBXProject section */
@@ -131,8 +240,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7F3B0D2883DF1600BFC161 /* XPCClient.swift in Sources */,
 				CF7F3AE82883DC9500BFC161 /* ViewController.swift in Sources */,
 				CF7F3AE62883DC9500BFC161 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7F3B0F2883E6F200BFC161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7F3B162883E6F200BFC161 /* main.m in Sources */,
+				CF7F3B1A2883E71100BFC161 /* maxprocmon_xpc.m in Sources */,
+				CF7F3B222883EF6A00BFC161 /* EndpointSecurity.cpp in Sources */,
+				CF7F3B292883F03700BFC161 /* esmain.cpp in Sources */,
+				CF7F3B272883EF9800BFC161 /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = maxprocmon/maxprocmon.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -275,6 +398,7 @@
 				DEVELOPMENT_TEAM = Y6S72U574H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = maxprocmon/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -287,6 +411,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = town.max.maxprocmon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "maxprocmon/maxprocmon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -296,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = maxprocmon/maxprocmon.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -303,6 +430,7 @@
 				DEVELOPMENT_TEAM = Y6S72U574H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = maxprocmon/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -315,7 +443,48 @@
 				PRODUCT_BUNDLE_IDENTIFIER = town.max.maxprocmon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "maxprocmon/maxprocmon-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CF7F3B182883E6F200BFC161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = maxprocmond/town.max.maxprocmond.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = Y6S72U574H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/maxprocmond/Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/maxprocmond/launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = town.max.maxprocmond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF7F3B192883E6F200BFC161 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = maxprocmond/town.max.maxprocmond.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = Y6S72U574H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/maxprocmond/Info.plist";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/maxprocmond/launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = town.max.maxprocmond;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -336,6 +505,15 @@
 			buildConfigurations = (
 				CF7F3AF22883DC9600BFC161 /* Debug */,
 				CF7F3AF32883DC9600BFC161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7F3B172883E6F200BFC161 /* Build configuration list for PBXNativeTarget "town.max.maxprocmond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7F3B182883E6F200BFC161 /* Debug */,
+				CF7F3B192883E6F200BFC161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
